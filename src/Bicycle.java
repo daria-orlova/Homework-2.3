@@ -4,10 +4,12 @@ public class Bicycle extends Transport implements HasTyre{
         super(modelName, wheelsCount);
     }
 
+    @Override
     public void updateTyre() {
         System.out.println("Меняем покрышку у велосипеда");
     }
 
+    @Override
     public void check(){
         checkTyres(this);
     }

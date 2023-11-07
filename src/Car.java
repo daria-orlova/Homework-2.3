@@ -4,14 +4,17 @@ public class Car extends Transport implements HasTyre, HasEngine{
         super(modelName, wheelsCount);
     }
 
+    @Override
     public void updateTyre() {
         System.out.println("Меняем покрышку у машины");
     }
 
+    @Override
     public void checkEngine() {
         System.out.println("Проверяем двигатель у машины");
     }
 
+    @Override
     public void check(){
         checkTyres(this);
         checkEngine();

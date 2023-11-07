@@ -1,4 +1,4 @@
-public interface Interface {
+public interface Serviceable{
     void check();
     default void check(Transport transport){
         System.out.println("Обслуживаем " + transport.getModelName());
